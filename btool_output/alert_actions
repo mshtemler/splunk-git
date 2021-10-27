@@ -1,0 +1,205 @@
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [default]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 10p
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [email]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      allow_empty_attachment = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      allowedDomainList = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      auth_password = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      auth_username = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      bcc = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      cc = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = $action.email.preprocess_results{default=""}$ | sendemail "results_link=$results.url$" "ssname=$name$" "graceful=$graceful{default=True}$" "trigger_time=$trigger_time$" maxinputs="$action.email.maxresults{default=10000}$" maxtime="$action.email.maxtime{default=5m}$" results_file="$results.file$"
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      content_type = html
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      description = Send an email notification to specified recipients
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      footer.text = If you believe you've received this email in error, please see your Splunk administrator.
+
+splunk > the engine for machine data
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      format = table
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      from = splunk
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      icon_path = mod_alert_icon_email.png
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      include.results_link = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      include.search = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      include.trigger = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      include.trigger_time = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      include.view_link = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      inline = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      label = Send email
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      mailserver = localhost
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      message.alert = The alert condition for '$name$' was triggered.
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      message.report = The scheduled report '$name$' has run.
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdf.footer_center = title
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdf.footer_enabled = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdf.footer_left = logo
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdf.footer_right = timestamp,pagination
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdf.header_center = description
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdf.header_enabled = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdf.html_image_rendering = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      pdfview = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      preprocess_results = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      priority = 3
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      reportCIDFontList = gb cns jp kor
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      reportFileName = $name$-$time:%Y-%m-%d$
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      reportIncludeSplunkLogo = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      reportPaperOrientation = portrait
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      reportPaperSize = letter
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      sendcsv = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      sendpdf = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      sendresults = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      sslVersions = tls1.2
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      subject = Splunk Alert: $name$
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      subject.alert = Splunk Alert: $name$
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      subject.report = Splunk Report: $name$
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      to = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 86400
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      useNSSubject = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      use_ssl = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      use_tls = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      width_sort_columns = 1
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         [logevent]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         description = Send log event to Splunk receiver endpoint
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         icon_path = logevent.png
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         is_custom = 1
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         label = Log Event
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         param.host = 
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         param.index = main
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         param.source = alert:$name$
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         param.sourcetype = generic_single_line
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         payload_format = json
+C:\Program Files\Splunk\etc\apps\alert_logevent\default\alert_actions.conf         python.version = python3
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 10p
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [lookup]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      append = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = outputlookup "$action.lookup.filename$" append=$action.lookup.append$
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      description = Output the results of the search to a CSV lookup file
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      filename = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      icon_path = mod_alert_icon_lookup.png
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      label = Output results to lookup
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 10p
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf [outputtelemetry]
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf command = outputtelemetry input=$action.outputtelemetry.param.input$ anonymous=$action.outputtelemetry.param.anonymous$ license=$action.outputtelemetry.param.license$ support=$action.outputtelemetry.param.support$ component=$action.outputtelemetry.param.component$ type=$action.outputtelemetry.param.type$ optinrequired=$action.outputtelemetry.param.optinrequired$
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf description = Custom action to output results to telemetry endpoint
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf icon_path = outputtelemetry.png
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf is_custom = 1
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf label = Output results to telemetry endpoint
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf param.anonymous = 1
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf param.component = 
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf param.input = 
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf param.license = 0
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf param.optinrequired = 1
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf param.support = 1
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf param.type = event
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf python.version = python3
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\alert_actions.conf ttl = 120
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [populate_lookup]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = copyresults dest="$action.populate_lookup.dest$"  sid="$search_id$"
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      dest = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 120
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [rss]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = createrss "path=$name$.xml" "name=$name$" "link=$results.url$" "descr=Alert trigger: $name$, results.count=$results.count$ " "count=30" "graceful=$graceful{default=1}$" maxtime="$action.rss.maxtime{default=1m}$"
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 1m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 86400
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [script]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = runshellscript "$action.script.filename$" "$results.count$" "$search$" "$search$" "$name$" "Saved Search [$name$] $counttype$($results.count$)" "$results.url$" "$deprecated_arg$" "$search_id$" "$results.file$" maxtime="$action.script.maxtime{default=5m}$"
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      description = Invoke a custom script
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      filename = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      icon_path = mod_alert_icon_script.png
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      label = Run a script
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 600
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  [ssg_mobile_alert]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  description = Send a notification to Splunk Mobile recipients
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  disabled = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  icon_path = appIcon.png
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  is_custom = 1
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  label = Send to Splunk Mobile
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  param.alert_description = $description$
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  param.alert_id = $id$
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  param.alert_severity = $alert.severity$
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  param.alert_time = $trigger_time$
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  param.app_name = $app$
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  param.owner = $owner$
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  param.results_link = $results_link$
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  payload_format = json
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\alert_actions.conf  python.version = python3
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 10p
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [summary_index]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      _name = summary
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = summaryindex spool=t uselb=t addtime=t index="$action.summary_index._name{required=yes}$" file="$name_hash$_$#random$.stash_new" name="$name$" marker="$action.summary_index*{format=$KEY=\\\"$VAL\\\", key_regex="action.summary_index.(?!(?:command|forceCsvResults|force_realtime_schedule|inline|maxresults|maxtime|python\\.version|ttl|track_alert|(?:_.*))$)(.*)"}$"
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      inline = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 120
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      [summary_metric_index]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      _name = summary
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = mcollect spool=t index="$action.summary_index._name{required=yes}$" file="$name_hash$_$#random$.stash_new" name="$name$" marker="$action.summary_index*{format=$KEY=\\\"$VAL\\\", key_regex="action.summary_index.(?!(?:command|forceCsvResults|force_realtime_schedule|inline|maxresults|maxtime|python\\.version|ttl|track_alert|(?:_.*))$)(.*)"}$" split=allnums $action.summary_index._metric_dims$
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      inline = 1
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 120
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          [webhook]
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      command = sendalert $action_name$ results_file="$results.file$" results_link="$results.url$"
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          description = Generic HTTP POST to a specified URL
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      forceCsvResults = auto
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      hostname = 
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          icon_path = webhook.png
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          is_custom = 1
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          label = Webhook
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxresults = 10000
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      maxtime = 5m
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          param.user_agent = Splunk/$server.guid$
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          payload_format = json
+C:\Program Files\Splunk\etc\apps\alert_webhook\default\alert_actions.conf          python.version = python3
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      track_alert = 0
+C:\Program Files\Splunk\etc\system\default\alert_actions.conf                      ttl = 10p

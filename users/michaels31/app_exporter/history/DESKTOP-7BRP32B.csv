@@ -1,0 +1,22 @@
+sid,search,"splunk_server","_time","is_realtime",provenance,"api_index_et","api_index_lt","event_count","exec_time","result_count","savedsearch_name","scan_count",status,"total_run_time","__mv_sid","__mv_search","__mv_splunk_server","__mv__time","__mv_is_realtime","__mv_provenance","__mv_api_index_et","__mv_api_index_lt","__mv_event_count","__mv_exec_time","__mv_result_count","__mv_savedsearch_name","__mv_scan_count","__mv_status","__mv_total_run_time"
+"michaels31__michaels31_YXBwX2V4cG9ydGVy__search1_1635082980.28","| rest /services/apps/local splunk_server=local
+          | lookup apps title
+          | search export=1 OR ((core=0 OR NOT core=*) disabled=0 (label=""***"" OR title=""***""))
+          | `truncate(description, 150)`
+          | rename eai:acl.perms.* as *
+          | table export label description version visible core disabled read write title","DESKTOP-7BRP32B","1635082980.332659",0,"UI:Dashboard:app_exporter","1833029933770.955","1833029933770.955",0,1635082980,2,search1,0,completed,"0.064",,,,,,,,,,,,,,,
+"michaels31__michaels31_YXBwX2V4cG9ydGVy__search3_1635083003.29","| inputlookup apps
+          | search export=1
+          | rename trigger as ""Sun Oct 24 2021 16:43:23 GMT+0300 (Israel Daylight Time)""
+          | map search=""rest /services/apps/local/$title$/package splunk_server=local | eval spent = time() - now()"" maxsearches=999
+          | eval mgmt_port = replace(url, ""^https?://[^/:]+:(\d+).*$"", ""\1"")
+          | table name spent path splunk_server mgmt_port
+          | delta spent as delta
+          | eval spent = coalesce(delta, spent)
+          | fields - delta","DESKTOP-7BRP32B","1635083003.657149",0,"UI:Dashboard:app_exporter","1833029933770.955","1833029933770.955",0,1635083003,1,search3,0,completed,"2.888",,,,,,,,,,,,,,,
+"michaels31__michaels31_YXBwX2V4cG9ydGVy__search1_1635083055.30","| rest /services/apps/local splunk_server=local
+          | lookup apps title
+          | search export=1 OR ((core=* OR NOT core=*) disabled=0 (label=""***"" OR title=""***""))
+          | `truncate(description, 150)`
+          | rename eai:acl.perms.* as *
+          | table export label description version visible core disabled read write title","DESKTOP-7BRP32B","1635083055.712436",0,"UI:Dashboard:app_exporter","1833029933770.955","1833029933770.955",0,1635083056,18,search1,0,completed,"0.07100000000000001",,,,,,,,,,,,,,,

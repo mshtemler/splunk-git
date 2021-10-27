@@ -1,0 +1,23 @@
+[app/install/install_source_checksum]
+version = 8.2.2.1
+modtime = 1635083732.936480300
+
+[inputs/gitforsplunk%3A%2F%2FsplunkGitTest]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1635249540.339516300
+
+[inputs/gitforsplunk%3A%2F%2FsplunkGit]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1635253047.144209700
+
+[inputs/gitforsplunk%3A%2F%2FSplunkGitJob]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1635255466.756415100
+
+[inputs/gitforsplunk%3A%2F%2FGitJob]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1635256569.481106500

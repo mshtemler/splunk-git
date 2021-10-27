@@ -1,0 +1,19 @@
+[inputs/WinEventLog%3A%2F%2FApplication]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1634820780.487492200
+
+[inputs/WinEventLog%3A%2F%2FSecurity]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1634820780.497652400
+
+[savedsearches/TestAlert]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1635085801.375427700
+
+[indexes/splunk-git]
+owner = michaels31
+version = 8.2.2.1
+modtime = 1635147268.503991000

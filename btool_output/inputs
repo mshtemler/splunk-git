@@ -1,0 +1,446 @@
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [SSL]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             allowSslRenegotiation = true
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             cipherSuite = ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             ecdhCurves = prime256v1, secp384r1, secp521r1
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sslQuietShutdown = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sslVersions = tls1.2
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          [WinEventLog://Application]
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          checkpointInterval = 5
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          current_only = 0
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          disabled = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             interval = 60
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          start_from = oldest
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          [WinEventLog://Security]
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          checkpointInterval = 5
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          current_only = 0
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          disabled = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             interval = 60
+C:\Program Files\Splunk\etc\apps\search\local\inputs.conf                          start_from = oldest
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [batch://C:\Program Files\Splunk\var\run\splunk\search_telemetry\*search_telemetry.json]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             crcSalt = <SOURCE>
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = _introspection
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             log_on_completion = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             move_policy = sinkhole
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sourcetype = search_telemetry
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [batch://C:\Program Files\Splunk\var\spool\splunk]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             crcSalt = <SOURCE>
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             move_policy = sinkhole
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [batch://C:\Program Files\Splunk\var\spool\splunk\...stash_hec]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             crcSalt = <SOURCE>
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             move_policy = sinkhole
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sourcetype = stash_hec
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [batch://C:\Program Files\Splunk\var\spool\splunk\...stash_new]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             crcSalt = <SOURCE>
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             move_policy = sinkhole
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             queue = stashparsing
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sourcetype = stash_new
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             time_before_close = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [batch://C:\Program Files\Splunk\var\spool\splunk\tracker.log*]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = _internal
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             move_policy = sinkhole
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sourcetype = splunkd_latency_tracker
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [blacklist:C:\Program Files\Splunk\etc\auth]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [blacklist:C:\Program Files\Splunk\etc\passwd]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [fschange:C:\Program Files\Splunk\etc]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             delayInMills = 100
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             disabled = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             filesPerDelay = 10
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             followLinks = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             fullEvent = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             hashMaxSize = -1
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             pollPeriod = 600
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             recurse = true
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sendEventMaxSize = -1
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             signedaudit = true
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  [gitforsplunk://GitJob]
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros, metric_alerts, alert_actions, dmc_alerts
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  disabled = 0
+host = $decideOnStartup
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  include_btool_output = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  index = main
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  interval = 60
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                python.version = python3
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  remote_push = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  repository_directory = splunkGit\.git
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                sourcetype = gitforsplunk
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                start_by_shell = false
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  working_directory = etc\
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  [gitforsplunk://SplunkGitJob]
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros, metric_alerts, alert_actions, dmc_alerts
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  disabled = 1
+host = $decideOnStartup
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  include_btool_output = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  index = main
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  interval = 60
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                python.version = python3
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  remote_push = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  repository_directory = splunkGitJob\.git
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                sourcetype = gitforsplunk
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                start_by_shell = false
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  working_directory = etc\
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  [gitforsplunk://splunkGit]
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros, metric_alerts, alert_actions, dmc_alerts
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  disabled = 1
+host = $decideOnStartup
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  include_btool_output = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  index = main
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  interval = 60
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                python.version = python3
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  remote_push = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  repository_directory = etc\.git
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                sourcetype = gitforsplunk
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                start_by_shell = false
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  working_directory = etc\
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  [gitforsplunk://splunkGitTest]
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  btool_conf_files = inputs, indexes, fields, props, limits, outputs, props, transforms, savedsearches, macros
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  disabled = 1
+host = $decideOnStartup
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  include_btool_output = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  index = splunk-git
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  interval = 60
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                python.version = python3
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  remote_push = 1
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  repository_directory = etc/.git/
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                sourcetype = gitforsplunk
+C:\Program Files\Splunk\etc\apps\git_for_splunk\default\inputs.conf                start_by_shell = false
+C:\Program Files\Splunk\etc\apps\git_for_splunk\local\inputs.conf                  working_directory = etc/
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              [http]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              ackIdleCleanup = true
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              allowSslCompression = true
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              allowSslRenegotiation = true
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              dedicatedIoThreads = 2
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              disabled = 1
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              enableSSL = 1
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              maxSockets = 0
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              maxThreads = 0
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              port = 8088
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              sslVersions = *,-ssl2
+C:\Program Files\Splunk\etc\apps\splunk_httpinput\default\inputs.conf              useDeploymentServer = 0
+C:\Program Files\Splunk\etc\apps\SA-Eventgen\default\inputs.conf                   [modinput_eventgen://default]
+C:\Program Files\Splunk\etc\apps\SA-Eventgen\default\inputs.conf                   disabled = true
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\SA-Eventgen\default\inputs.conf                   python.version = python3
+C:\Program Files\Splunk\etc\apps\SA-Eventgen\default\inputs.conf                   verbosity = 40
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [monitor://C:\Program Files\Splunk\etc\splunk.version]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _TCP_ROUTING = *
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = _internal
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sourcetype = splunk_version
+C:\Program Files\Splunk\etc\apps\introspection_generator_addon\default\inputs.conf [monitor://C:\Program Files\Splunk\var\log\introspection]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\apps\introspection_generator_addon\default\inputs.conf index = _introspection
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [monitor://C:\Program Files\Splunk\var\log\splunk]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = _internal
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [monitor://C:\Program Files\Splunk\var\log\splunk\license_usage_summary.log]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = _telemetry
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [monitor://C:\Program Files\Splunk\var\log\splunk\splunk_instrumentation_cloud.log*]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = _telemetry
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sourcetype = splunk_cloud_telemetry
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [monitor://C:\Program Files\Splunk\var\log\watchdog\watchdog.log*]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = _internal
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [script]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             interval = 60.0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             start_by_shell = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [script://C:\Program Files\Splunk\bin\scripts\splunk-wmi.path]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             disabled = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             interval = 10000000
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             persistentQueueSize = 200MB
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             queue = winparsing
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             source = wmi
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             sourcetype = wmi
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  [script://C:\Program Files\Splunk\etc/apps/python_upgrade_readiness_app/bin/pura_get_all_apps.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  disabled = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  interval = 00 23 */1 * *
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  passAuth = admin
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  python.version = python3
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  sourcetype = script
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  [script://C:\Program Files\Splunk\etc/apps/python_upgrade_readiness_app/bin/pura_scan_apps.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  disabled = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  interval = 00 1 */1 * *
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  passAuth = admin
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  python.version = python3
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  sourcetype = script
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  [script://C:\Program Files\Splunk\etc/apps/python_upgrade_readiness_app/bin/pura_send_email.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  disabled = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  interval = 0 6 * * 1
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  passAuth = admin
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  python.version = python3
+C:\Program Files\Splunk\etc\apps\python_upgrade_readiness_app\default\inputs.conf  sourcetype = script
+C:\Program Files\Splunk\etc\apps\splunk-dashboard-studio\default\inputs.conf       [script://C:\Program Files\Splunk\etc/apps/splunk-dashboard-studio/bin/save_image_and_icon_on_install.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\splunk-dashboard-studio\default\inputs.conf       interval = -1
+C:\Program Files\Splunk\etc\apps\splunk-dashboard-studio\default\inputs.conf       passAuth = splunk-system-user
+C:\Program Files\Splunk\etc\apps\splunk-dashboard-studio\default\inputs.conf       python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk-dashboard-studio\default\inputs.conf       run_only_one = false
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        [script://C:\Program Files\Splunk\etc/apps/splunk_instrumentation/bin/instrumentation.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        disabled = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        index = _telemetry
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        interval = 0 * * * *
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        passAuth = splunk-system-user
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        source = instrumentation_scripted_input
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        sourcetype = splunk_telemetry_log
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        [script://C:\Program Files\Splunk\etc/apps/splunk_instrumentation/bin/on_splunk_start.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        disabled = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        interval = -1
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        passAuth = splunk-system-user
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        [script://C:\Program Files\Splunk\etc/apps/splunk_instrumentation/bin/schedule_delete.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        disabled = false
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        interval = 0 0 * * *
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        passAuth = splunk-system-user
+C:\Program Files\Splunk\etc\apps\splunk_instrumentation\default\inputs.conf        python.version = python3
+C:\Program Files\Splunk\etc\apps\introspection_generator_addon\default\inputs.conf [script://C:\Program Files\Splunk\etc\apps\introspection_generator_addon\bin\collector.path]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\introspection_generator_addon\default\inputs.conf interval = 0
+C:\Program Files\Splunk\etc\apps\introspection_generator_addon\default\inputs.conf sourcetype = splunk_resource_usage__internal
+C:\Program Files\Splunk\etc\apps\splunk_monitoring_console\default\inputs.conf     [script://C:\Program Files\Splunk\etc\apps\splunk_monitoring_console\bin\dmc_config.py]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\apps\splunk_monitoring_console\default\inputs.conf     interval = -1
+C:\Program Files\Splunk\etc\apps\splunk_monitoring_console\default\inputs.conf     passAuth = splunk-system-user
+C:\Program Files\Splunk\etc\apps\splunk_monitoring_console\default\inputs.conf     python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [secure_gateway_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 1
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [splunktcp]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             acceptFrom = *
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             connection_host = ip
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             route = has_key:_replicationBucketUUID:replicationQueue;has_key:_dstrx:typingQueue;has_key:_linebreaker:indexQueue;absent_key:_linebreaker:parsingQueue
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_alerts_ttl_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 3600
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         ttl_days = 1
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_delete_tokens_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 7200
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_device_role_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 300
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_enable_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 0
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 60
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_metrics_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 43200
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_registered_users_list_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 86400
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_subscription_clean_up_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         cleanup_threshold_seconds = 120
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 120
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         [ssg_subscription_modular_input://default]
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         disabled = 1
+host = $decideOnStartup
+index = default
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         interval = 0
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         maximum_iteration_time_warn_threshold_seconds = 300
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         minimum_iteration_time_seconds = 5
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         python.version = python3
+C:\Program Files\Splunk\etc\apps\splunk_secure_gateway\default\inputs.conf         subscription_processor_parallelism = N_CPU
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [tcp]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             acceptFrom = *
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             connection_host = dns
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             [udp]
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             _rcvbuf = 1572864
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             connection_host = ip
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dc_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_dns_name = 
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             evt_resolve_ad_obj = 0
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             host = $decideOnStartup
+C:\Program Files\Splunk\etc\system\default\inputs.conf                             index = default

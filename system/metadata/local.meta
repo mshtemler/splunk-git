@@ -1,0 +1,23 @@
+[server/sslConfig]
+version = 8.2.2.1
+modtime = 1634737094.506582000
+
+[server/general]
+version = 8.2.2.1
+modtime = 1634737173.227863500
+
+[server/lmpool%3Aauto_generated_pool_download-trial]
+version = 8.2.2.1
+modtime = 1634737173.255974700
+
+[server/lmpool%3Aauto_generated_pool_forwarder]
+version = 8.2.2.1
+modtime = 1634737173.264989100
+
+[server/lmpool%3Aauto_generated_pool_free]
+version = 8.2.2.1
+modtime = 1634737173.273365700
+
+[authorize/role_splunk-git-user]
+version = 8.2.2.1
+modtime = 1635163288.814963000

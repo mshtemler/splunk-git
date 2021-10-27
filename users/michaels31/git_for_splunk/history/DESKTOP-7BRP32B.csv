@@ -1,0 +1,121 @@
+sid,search,"splunk_server","_time","is_realtime",provenance,"api_et","api_index_et","api_index_lt","api_lt","event_count","exec_time","result_count","savedsearch_name","scan_count","search_et","search_lt",status,"total_run_time","__mv_sid","__mv_search","__mv_splunk_server","__mv__time","__mv_is_realtime","__mv_provenance","__mv_api_et","__mv_api_index_et","__mv_api_index_lt","__mv_api_lt","__mv_event_count","__mv_exec_time","__mv_result_count","__mv_savedsearch_name","__mv_scan_count","__mv_search_et","__mv_search_lt","__mv_status","__mv_total_run_time"
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search1_1635085637.42","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","DESKTOP-7BRP32B","1635085637.778384",0,"UI:Dashboard:status","1634479200.000000000","1833029933770.955","1833029933770.955","1635085637.000000000",0,1635085638,0,search1,0,"1634479200.000000000","1635085637.000000000",completed,"0.146",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635085637.43","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635085637.784696",0,"UI:Dashboard:status","1634479200.000000000","1833029933770.955","1833029933770.955","1635085637.000000000",0,1635085638,0,search3,0,"1634479200.000000000","1635085637.000000000",completed,"0.14200000000000002",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search1_1635085836.54","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","DESKTOP-7BRP32B","1635085836.011848",0,"UI:Dashboard:status","1634479200.000000000","1833029933770.955","1833029933770.955","1635085836.000000000",0,1635085836,0,search1,0,"1634479200.000000000","1635085836.000000000",completed,"0.183",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635085836.55","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635085836.019891",0,"UI:Dashboard:status","1634479200.000000000","1833029933770.955","1833029933770.955","1635085836.000000000",0,1635085836,0,search3,0,"1634479200.000000000","1635085836.000000000",completed,"0.176",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635085891.59","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635085891.855411",0,"UI:Dashboard:status","1634479200.000000000","1833029933770.955","1833029933770.955","1635085891.000000000",0,1635085892,0,search3,0,"1634479200.000000000","1635085891.000000000",completed,"0.591",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635085896.61","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635085896.290949",0,"UI:Dashboard:status","1634479200.000000000","1833029933770.955","1833029933770.955","1635085896.000000000",0,1635085897,0,search3,0,"1634479200.000000000","1635085896.000000000",completed,"0.599",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635085910.63","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635085910.134700",0,"UI:Dashboard:status","1634479200.000000000","1833029933770.955","1833029933770.955","1635085910.000000000",0,1635085910,0,search3,0,"1634479200.000000000","1635085910.000000000",completed,"0.28600000000000003",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635144938.211","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635144938.076385",0,"UI:Dashboard:status","1634536800.000000000","1833029933770.955","1833029933770.955","1635144938.000000000",0,1635144938,0,search3,0,"1634536800.000000000","1635144938.000000000",completed,"0.215",,,,,,,,,,,,,,,,,,,
+"1635144975.212","search sourcetype=gitforsplunk index=_internal
+| regex _raw != ""(?s)COMMAND: git commit.*no changes added to commit""
+| eval success_body = commit_hash + ""
+
+"" + commit_message + ""
+
+"" + mvjoin(changed_file, ""
+"") + ""
+
+""
+| eval body = case(status=0, success_body, status=1, (""Changes were committed to the repository but an unexpected error occured
+
+"" + _raw), true(), (""Changes could not be commited.
+
+"" + _raw)) 
+| eval status = case(status=0, ""OK"", status=1, ""Warning"", true(), ""Error"") 
+| eval changes = if(isnull(changed_file), """", ""Changes: "" + tostring(mvcount(changed_file)) + "", "")
+| eval size = if(isnull(repo_size), """", ""RepoSize: "" + tostring(round(repo_size / 1000000)) + ""mb, "")
+| eval subject = ""GitForSplunk on "" + host + "": ["" + status + ""] "" + changes + size + ""Runtime: "" + tostring(round(runtime)) + ""sec, "" + strftime(_time, ""%Y-%m-%d %H:%M "") 
+| fields body subject","DESKTOP-7BRP32B","1635144975.573228",0,"UI:Search","1635144675.000000000",,,"1635144975.000000000",0,1635144975,0,,0,"1635144675.000000000","1635144975.000000000",completed,"0.153",,,,,,,,,,,,,,,,,,,
+"1635144995.213","search sourcetype=gitforsplunk index=_internal
+| regex _raw != ""(?s)COMMAND: git commit.*no changes added to commit""
+| eval success_body = commit_hash + ""
+
+"" + commit_message + ""
+
+"" + mvjoin(changed_file, ""
+"") + ""
+
+""
+| eval body = case(status=0, success_body, status=1, (""Changes were committed to the repository but an unexpected error occured
+
+"" + _raw), true(), (""Changes could not be commited.
+
+"" + _raw)) 
+| eval status = case(status=0, ""OK"", status=1, ""Warning"", true(), ""Error"") 
+| eval changes = if(isnull(changed_file), """", ""Changes: "" + tostring(mvcount(changed_file)) + "", "")
+| eval size = if(isnull(repo_size), """", ""RepoSize: "" + tostring(round(repo_size / 1000000)) + ""mb, "")
+| eval subject = ""GitForSplunk on "" + host + "": ["" + status + ""] "" + changes + size + ""Runtime: "" + tostring(round(runtime)) + ""sec, "" + strftime(_time, ""%Y-%m-%d %H:%M "") 
+| fields body subject","DESKTOP-7BRP32B","1635144995.033890",0,"UI:Search","1635144695.000000000",,,"1635144995.000000000",0,1635144995,0,,0,"1635144695.000000000","1635144995.000000000",completed,"0.135",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635148493.246","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635148493.159922",0,"UI:Dashboard:status","1634540400.000000000","1833029933770.955","1833029933770.955","1635148493.000000000",0,1635148493,0,search3,0,"1634540400.000000000","1635148493.000000000",completed,"0.255",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635149288.253","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635149288.148692",0,"UI:Dashboard:status","1634544000.000000000","1833029933770.955","1833029933770.955","1635149288.000000000",0,1635149288,0,search3,0,"1634544000.000000000","1635149288.000000000",completed,"0.202",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search1_1635227294.580","search sourcetype=gitforsplunk index=_internal 
+| eval time = strftime(_time, ""%Y-%m-%d %H:%M"") 
+| eval etime1 = _time
+| eval etime2 = _time + 1
+| rex ""(?s)git commit \-m auto.*?(?<no_changes1>no changes added to commit)""
+| rex ""EXITCODE: 1[\s*](?<no_changes2>No changes)""
+| sort - _time
+| foreach status_* 
+    [eval <<MATCHSTR>> = case(isnull(<<FIELD>>), null(), <<FIELD>>==0, ""OK"", true(), ""Error"")]
+| eval commit_files = if((isnotnull(no_changes1) OR isnotnull(no_changes2)) AND status_commit_files == 1, ""No Changes"", commit_files) 
+| table etime1 etime2 time host commit_message runtime check_status add_files commit_files change_message commit_details push 
+| rename time as Time host as Host commit_message as ""Commit message"" runtime as Duration check_status as ""Check status"" add_files as ""Add files"" commit_files as ""Commit files"" change_message as ""Update message"" commit_details as ""Show details"" push as ""Push""","DESKTOP-7BRP32B","1635227294.666812",0,"UI:Dashboard:status","1634619600.000000000","1833029933770.955","1833029933770.955","1635227294.000000000",0,1635227295,0,search1,0,"1634619600.000000000","1635227294.000000000",completed,"0.314",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635227294.581","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635227294.669738",0,"UI:Dashboard:status","1634619600.000000000","1833029933770.955","1833029933770.955","1635227294.000000000",0,1635227295,0,search3,0,"1634619600.000000000","1635227294.000000000",completed,"0.18",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635249439.673","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635249439.125573",0,"UI:Dashboard:status","1634641200.000000000","1833029933770.955","1833029933770.955","1635249439.000000000",0,1635249440,0,search3,0,"1634641200.000000000","1635249439.000000000",completed,"0.42",,,,,,,,,,,,,,,,,,,
+"michaels31__michaels31_Z2l0X2Zvcl9zcGx1bms__search3_1635255181.732","search sourcetype=gitforsplunk index=_internal 
+|  top 20 changed_file 
+|  fields - percent
+| rename changed_file as ""Filename"" count as Count","DESKTOP-7BRP32B","1635255181.182344",0,"UI:Dashboard:status","1634648400.000000000","1833029933770.955","1833029933770.955","1635255181.000000000",0,1635255182,0,search3,0,"1634648400.000000000","1635255181.000000000",completed,"0.27",,,,,,,,,,,,,,,,,,,

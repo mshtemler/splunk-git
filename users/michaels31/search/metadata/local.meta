@@ -1,0 +1,23 @@
+[history/.dummy_history]
+version = 8.2.2.1
+modtime = 1634737585.957794200
+
+[ui-tour/search-tour]
+version = 8.2.2.1
+modtime = 1634737589.993305800
+
+[ui-tour/adddata-tour%3Aenterprise]
+version = 8.2.2.1
+modtime = 1634820651.455562000
+
+[ui-prefs/search]
+version = 8.2.2.1
+modtime = 1635255255.257434900
+
+[savedsearches/Test]
+version = 8.2.2.1
+modtime = 1635085507.185391100
+
+[savedsearches/AlertTest%21]
+version = 8.2.2.1
+modtime = 1635147775.866399000

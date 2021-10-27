@@ -1,0 +1,116 @@
+C:\Program Files\Splunk\etc\system\default\fields.conf [_indextime]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [_sourcetype]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_hour]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_mday]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_minute]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_month]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_second]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_wday]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_year]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [date_zone]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [default]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = False
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = True
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [evtlog_account]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [evtlog_category]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [evtlog_domain]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [evtlog_id]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [evtlog_severity]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [evtlog_sid]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [evtlog_sid_type]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [host]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [index]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [linecount]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [punct]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [source]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [sourcetype]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [sourcetype::splunk_resource_usage::data*]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = True
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [splunk_server]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [splunk_server_group]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [timeendpos]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 
+C:\Program Files\Splunk\etc\system\default\fields.conf [timestartpos]
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED = True
+C:\Program Files\Splunk\etc\system\default\fields.conf INDEXED_VALUE = False
+C:\Program Files\Splunk\etc\system\default\fields.conf TOKENIZER = 

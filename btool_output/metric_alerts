@@ -1,0 +1,14 @@
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf [default]
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf action.email.include.smaDefinition = 0
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf action.email.include.trigger_time = 1
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf action.email.inline = 1
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf action.email.sendresults = 1
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf condition = 
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf description = 
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf disabled = 0
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf filter = 
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf groupby = 
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf metric_indexes = 
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf trigger.expires = 24h
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf trigger.max_tracked = 20
+C:\Program Files\Splunk\etc\system\default\metric_alerts.conf trigger.suppress = 
